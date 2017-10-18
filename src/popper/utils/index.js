@@ -24,7 +24,6 @@ import isFixed from './isFixed';
 import isFunction from './isFunction';
 import isModifierEnabled from './isModifierEnabled';
 import isModifierRequired from './isModifierRequired';
-import isNative from './isNative';
 import isNumeric from './isNumeric';
 import isTransformed from './isTransformed';
 import removeEventListeners from './removeEventListeners';
@@ -61,7 +60,6 @@ export default {
     isFunction,
     isModifierEnabled,
     isModifierRequired,
-    isNative,
     isNumeric,
     isTransformed,
     removeEventListeners,

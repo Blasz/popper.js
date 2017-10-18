@@ -1,4 +1,3 @@
-import isNative from 'src/popper/utils/isNative';
 import makePopperFactory from '../utils/makePopperFactory';
 import makeConnectedElement from '../utils/makeConnectedElement';
 import '../setup';
@@ -6,7 +5,7 @@ import '../setup';
 
 describe('[rendering]', () => {
     const makePopper = makePopperFactory();
-    const microTasksAvailable = isNative(window.MutationObserver);
+    const microTasksAvailable = window.Promise
 
     it('renders to the DOM before the first paint when microtasks are available', (done) => {
         if (!microTasksAvailable) {
