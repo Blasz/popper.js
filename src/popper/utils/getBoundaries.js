@@ -27,7 +27,7 @@ export default function getBoundaries(popper, padding, boundariesElement) {
         const { left, top } = getOffsetRectRelativeToViewport(offsetParent);
         const { clientWidth: width, clientHeight: height } = window.document.documentElement;
 
-        if (getPosition(popper) === 'fixed') {
+        if (isFixed(popper) || getPosition(popper) === 'fixed') {
             boundaries.right = width;
             boundaries.bottom = height;
         } else {
