@@ -1,6 +1,6 @@
 /**!
  * @fileOverview Kickass library to create and place poppers near their reference elements.
- * @version 1.0.9
+ * @version 1.0.10
  * @license
  * Copyright (c) 2016 Federico Zivolo and contributors
  *
@@ -409,7 +409,7 @@ function getBoundaries(popper, padding, boundariesElement) {
             height = _window$document$docu.clientHeight;
 
 
-        if (getPosition(popper) === 'fixed') {
+        if (isFixed(popper) || getPosition(popper) === 'fixed') {
             boundaries.right = width;
             boundaries.bottom = height;
         } else {
